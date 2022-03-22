@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- for bootstrap 4 we should use it to make a page responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Use bootstrap 4 CDN path -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+                integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+                crossorigin="anonymous">
+
+        <!-- link fontawesome css file -->
+        <link rel="stylesheet" href="css/font-awesome/font awesome.min.css">
+        <!-- link custom css file -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Pet shop</title>
+</head>
+
+<body>
+        <div class="header_bar" id="header_bar">
+                <header class="header">
+                        <div class="logo">
+                                <a href="#" style="font-size: 25px; font-weight: bold;"><i class="fa fa-paw" style="color: #e67e22; font-size: 25px; margin-right: 7px;"></i>Shop</a>
+                        </div>
+                        
+                        <div class="menu_bar">
+                                <ul>
+                                        <li><a href="#home">Home</a></li>
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#shop">Shop</a></li>
+                                        <li><a href="#services">Services</a></li>
+                                        <li><a href="#plans">Plan</a></li>
+                                        <li><a href="#contact">Contact</a></li>
+                                </ul>
+                        </div>
+                        <div class="icons">
+                                <div class="burger_icon" id="burger_icon">
+                                        <i class="fa fa-bars"></i>
+                                </div>
+                                <div class="cart_icon" id="cart_icon">
+                                        <i class="fa fa-shopping-cart" style="margin: 0 15px;"></i>
+                                </div>
+                                <div class="user_icons" id="user_icon">
+                                        <i class="fa fa-user" id="user"></i>
+                                </div>
+                        </div>
+                </header>
+
+                <div class="user_form">
+                        <div class="login_form" id="login_form">
+                                <h3>Sign In</h3>
+                                <form action="" method="post">
+                                        <input type="text" name="email" id="user_email"
+                                                placeholder="enter your email" />
+                                        <input type="text" name="password" id="user_password"
+                                                placeholder="enter your password" />
+                                        <div class="remember_me">
+                                                <input type="checkbox" name="remember_me"
+                                                        id="remember_me"><label for="remember_me">Remember
+                                                        Me</label>
+                                        </div>
+                                        <button type="submit" class="fadeblue_general_btn">Sign In</button>
+                                        <div class="links" style="margin-top: 20px;">
+                                                <a href="#">Forget Password</a>
+                                                <a href="#">Sign Up</a>
+                                        </div>
+                                </form>
+                        </div>
+                </div>
+        </div>
+        <div class="hero_section" id="home">
+                <div class="content">
+                        <h3><span>Hi</span> Welcome To Our Pet Shop</h3>
+                        <a href="#" class="general_btn_white">Shop now</a>
+                </div>
+                <img src="images/bottom_wave.png" class="bottom_wave" alt="wave" />
+        </div>
+
+        <div class="container-lg" id="about" style="max-width: 1360px; margin: 150px auto;">
+                <div class="row align-items-center justify-content-start">
+                        <div class="col-md-6">
+                                <img src="images/about_img.png" style="max-height: 400px; max-width: 100%;" alt="about image" />
+                        </div>
+                        <div class="col-md-6">
+                                <div style="margin-left: 10px;">
+                                        <h2 style="font-weight: bold; line-height: 55px; text-transform: capitalize;">Premium <span style="color: #e67e22;">Pet Food</span> manufacturer</h2>
+                                        <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Voluptatum Sint, Dolore Perspiciatis Iure Consequuntur Eligendi Quaerat Vitae Shaikh Anas.</p>
+                                        <a href="#" class="general_btn_blue">Read More</a>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <div class="container-lg"  style="max-width: 1360px; margin: 50px auto;">
+                <div class="row align-items-center justify-content-start" style="width: 97%;">
+                        <div class="col-md-6 px-0">
+                                <img src="images/dog_food.png" style="max-width: 100%; max-height: 400px;" alt="dog food" />
+                        </div>
+                        <div class="col-md-6 text-center">
+                                <h2 style="font-weight: bold; line-height: 55px; text-transform: capitalize;"><span style="color: #e67e22;">Air Dried</span> Dog Food</h2>
+                                <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Fugiat Iure Illo, Repudiandae Rem Porro Sunt.</p>
+                                <div class="prize">
+                                        <h2 style="margin-top: 30px;">$15.00 - $30.00</h2>
+                                </div>
+                                <a href="#"><img src="images/shop_now_dog.png" alt="dog food" class="buy_dog_food"></a>
+                        </div>
+                </div>
+        </div>
+        <div class="container-lg"  style="max-width: 1360px; margin: 50px auto;">
+                <div class="row cat_food align-items-center justify-content-start">
+                        <div class="col-md-6 text-center">
+                                <h2 style="font-weight: bold; line-height: 55px; text-transform: capitalize;"><span style="color: #e67e22;">Air Dried</span> Cat Food</h2>
+                                <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Fugiat Iure Illo, Repudiandae Rem Porro Sunt.</p>
+                                <div class="prize">
+                                        <h2 style="margin-top: 30px;">$15.00 - $30.00</h2>
+                                </div>
+                                <a href="#"><img src="images/shop_now_cat.png" alt="cat food" class="buy_cat_food"></a>
+                        </div>
+                        <div class="col-md-6 px-0" style="text-align: end;">
+                                <img src="images/cat_food.png" style="max-height: 400px; max-width: 100%;" alt="dog food" />
+                        </div>
+                </div>
+        </div>
+        <div class="our_products" id="shop">
+                <h1 style="text-transform: capitalize; text-align: center; padding: 20px 0;">Our <span style="color: #e67e22;">Products</span></h1>
+                <div class="container">
+                        <div class="row">
+                                <div class="col-md-6 col-lg-4 col-xl-4 py-2 px-2 text-center">
+                                        <div class="image_box">
+                                                <img src="images/product_01.jpg" alt="">
+                                                <div class="image_tools">
+                                                        <div class="font_awesome_icon cart_box">
+                                                                <i class="fa fa-shopping-cart"></i>
+                                                        </div>
+                                                        <div class="font_awesome_icon avorite">
+                                                                <i class="fa fa-heart"></i>
+                                                        </div>
+                                                        <div class="font_awesome_icon cart_box">
+                                                                <i class="fa fa-eye"></i>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <h4 style="margin-top: 30px; font-weight: bold;">Air-Dried Food</h4>
+                                        <h5 style="margin-top: 10px; color: #e67e22;">$15.00 - $30.00</h5>
+                                        
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-4 py-2 px-2 text-center">
+                                        <div class="image_box">
+                                                <img src="images/product_02.jpg" alt="">
+                                                <div class="image_tools">
+                                                        <div class="font_awesome_icon cart_box">
+                                                                <i class="fa fa-shopping-cart"></i>
+                                                        </div>
+                                                        <div class="font_awesome_icon avorite">
+                                                                <i class="fa fa-heart"></i>
+                                                        </div>
+                                                        <div class="font_awesome_icon cart_box">
+                                                                <i class="fa fa-eye"></i>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <h4 style="margin-top: 30px; font-weight: bold;">Air-Dried Food</h4>
+                                        <h5 style="margin-top: 10px; color: #e67e22;">$15.00 - $30.00</h5>
+                                        
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-4 py-2 px-2 text-center">
+                                        <div class="image_box">
+                                                <img src="images/product_03.jpg" alt="">
+                                                <div class="image_tools">
+                                                        <div class="font_awesome_icon cart_box">
+                                                                <i class="fa fa-shopping-cart"></i>
+                                                        </div>
+                                                        <div class="font_awesome_icon avorite">
+                                                                <i class="fa fa-heart"></i>
+                                                        </div>
+                                                        <div class="font_awesome_icon cart_box">
+                                                                <i class="fa fa-eye"></i>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <h4 style="margin-top: 30px; font-weight: bold;">Air-Dried Food</h4>
+                                        <h5 style="margin-top: 10px; color: #e67e22;">$15.00 - $30.00</h5>
+                                        
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-4 py-2 px-2 text-center">
+                                        <div class="image_box">
+                                                <img src="images/product_04.jpg" alt="">
+                                                <div class="image_tools">
+                                                        <div class="font_awesome_icon cart_box">
+                                                                <i class="fa fa-shopping-cart"></i>
+                                                        </div>
+                                                        <div class="font_awesome_icon avorite">
+                                                                <i class="fa fa-heart"></i>
+                                                        </div>
+                                                        <div class="font_awesome_icon cart_box">
+                                                                <i class="fa fa-eye"></i>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <h4 style="margin-top: 30px; font-weight: bold;">Air-Dried Food</h4>
+                                        <h5 style="margin-top: 10px; color: #e67e22;">$15.00 - $30.00</h5>
+                                        
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-xl-4 py-2 px-2 text-center">
+                                        <div class="image_box">
+                                                <img src="images/product_05.jpg" alt="">
+                                                <div class="image_tools">
+                                                        <div class="font_awesome_icon cart_box">
+                                                                <i class="fa fa-shopping-cart"></i>
+                                                        </div>
+                                                        <div class="font_awesome_icon avorite">
+                                                                <i class="fa fa-heart"></i>
+                                                        </div>
+                                                        <div class="font_awesome_icon cart_box">
+                                                                <i class="fa fa-eye"></i>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <h4 style="margin-top: 30px; font-weight: bold;">Air-Dried Food</h4>
+                                        <h5 style="margin-top: 10px; color: #e67e22;">$15.00 - $30.00</h5>
+                                        
+                                </div>
+                                <div class="col-lg-6 col-xl-4 py-2 px-2 text-center">
+                                        <div class="image_box">
+                                                <img src="images/product_06.jpg" alt="">
+                                                <div class="image_tools">
+                                                        <div class="font_awesome_icon cart_box">
+                                                                <i class="fa fa-shopping-cart"></i>
+                                                        </div>
+                                                        <div class="font_awesome_icon avorite">
+                                                                <i class="fa fa-heart"></i>
+                                                        </div>
+                                                        <div class="font_awesome_icon cart_box">
+                                                                <i class="fa fa-eye"></i>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <h4 style="margin-top: 30px; font-weight: bold;">Air-Dried Food</h4>
+                                        <h5 style="margin-top: 10px; color: #e67e22;">$15.00 - $30.00</h5>
+                                        
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <div class="our_services"  id="services">
+                <h2 style="text-align: center;  margin: 20px auto; font-weight: bold;">Our <span style="color: #e67e22;">Services</span></h2>
+                <div class="container">
+                        <div class="row">
+                                <div class="col-md-4 mb-5">
+                                        <div class="service_box">
+                                                <div class="pet_icon">
+                                                        <i class="fas fa-dog"></i>
+                                                </div>
+                                                <h3 style="font-weight:bold; margin: 10px 0; font-size:25px;">Dog Boarding</h3>
+                                                <a href="#" class="general_btn_blue">Read More</a>
+                                        </div>
+                                </div>
+                                <div class="col-md-4 mb-5">
+                                        <div class="service_box">
+                                                <div class="pet_icon">
+                                                        <i class="fas fa-cat"></i>
+                                                </div>
+                                                <h3 style="font-weight:bold; margin: 10px 0; font-size:25px;">Cat Boarding</h3>
+                                                <a href="#" class="general_btn_blue">Read More</a>
+                                        </div>
+                                </div>
+                                <div class="col-md-4 mb-5">
+                                        <div class="service_box">
+                                                <div class="pet_icon">
+                                                        <i class="fas fa-bath"></i>
+                                                </div>
+                                                <h3 style="font-weight:bold; margin: 10px 0; font-size:25px;">Spa & Grooming</h3>
+                                                <a href="#" class="general_btn_blue">Read More</a>
+                                        </div>
+                                </div>
+                                <div class="col-md-4 mb-5">
+                                        <div class="service_box">
+                                                <div class="pet_icon">
+                                                        <i class="fas fa-dog"></i>
+                                                </div>
+                                                <h3 style="font-weight:bold; margin: 10px 0; font-size:25px;">Dog Boarding</h3>
+                                                <a href="#" class="general_btn_blue">Read More</a>
+                                        </div>
+                                </div>
+                                <div class="col-md-4 mb-5">
+                                        <div class="service_box">
+                                                <div class="pet_icon">
+                                                        <i class="fas fa-cat"></i>
+                                                </div>
+                                                <h3 style="font-weight:bold; margin: 10px 0; font-size:25px;">Cat Boarding</h3>
+                                                <a href="#" class="general_btn_blue">Read More</a>
+                                        </div>
+                                </div>
+                                <div class="col-md-4 mb-5">
+                                        <div class="service_box">
+                                                <div class="pet_icon">
+                                                        <i class="fas fa-bath"></i>
+                                                </div>
+                                                <h3 style="font-weight:bold; margin: 10px 0; font-size:25px;">Spa & Grooming</h3>
+                                                <a href="#" class="general_btn_blue">Read More</a>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="plans" id="plans">
+                <h2 style="text-align: center;  margin: 20px auto; font-weight: bold;">Choose a <span style="color: #e67e22;">Plan</span></h2>
+                <div class="container">
+                        <div class="row">
+                                <div class="col-md-4 mb-5 px-2">
+                                        <div class="plan_card">
+                                                <h5 style="color: #e67e22; text-transform: capitalize; text-align: center; font-weight: bold;">Pet Care</h5>
+                                                <h2 style="font-weight:bold; margin: 10px 0; text-align: center;">1 Day</h2>
+                                                <div class="vahical_icon">
+                                                        <i class="fas fa-bicycle"></i>
+                                                </div>
+                                                <div class="services_count">
+                                                        <div class="single_service">
+                                                                <p style="text-transform: capitalize;">Pet Room</p>
+                                                                <div class="tick_icon">
+                                                                        <i class="fas fa-check"></i>
+                                                                </div>
+                                                        </div>
+                                                        <div class="single_service">
+                                                                <p style="text-transform: capitalize;">Pet Grooming</p>
+                                                                <div class="tick_icon">
+                                                                        <i class="fas fa-check"></i>
+                                                                </div>
+                                                        </div>
+                                                        <div class="single_service">
+                                                                <p style="text-transform: capitalize;">Pet Exercise</p>
+                                                                <div class="tick_icon">
+                                                                        <i class="fas fa-check"></i>
+                                                                </div>
+                                                        </div>
+                                                        <div class="single_service">
+                                                                <p style="text-transform: capitalize;">Pet Meals</p>
+                                                                <div class="tick_icon">
+                                                                        <i class="fas fa-check"></i>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <h1 style="margin: 10px 0; font-weight: bold; font-size: 50px;"><span style="font-size: 30px;">$</span>50</h1>
+                                                <a href="#" class="general_btn_blue" style="position: absolute; right: 40px; height: 46px; line-height: 150%;">Read More</a>
+                                        </div>
+                                </div>
+                                <div class="col-md-4 mb-5 px-2">
+                                        <div class="plan_card">
+                                                <h5 style="color: #e67e22; text-transform: capitalize; text-align: center; font-weight: bold;">Pet Care</h5>
+                                                <h2 style="font-weight:bold; margin: 10px 0; text-align: center;">10 Day</h2>
+                                                <div class="vahical_icon">
+                                                        <i class="fas fa-motorcycle"></i>
+                                                </div>
+                                                <div class="services_count">
+                                                        <div class="single_service">
+                                                                <p style="text-transform: capitalize;">Pet Room</p>
+                                                                <div class="tick_icon">
+                                                                        <i class="fas fa-check"></i>
+                                                                </div>
+                                                        </div>
+                                                        <div class="single_service">
+                                                                <p style="text-transform: capitalize;">Pet Grooming</p>
+                                                                <div class="tick_icon">
+                                                                        <i class="fas fa-check"></i>
+                                                                </div>
+                                                        </div>
+                                                        <div class="single_service">
+                                                                <p style="text-transform: capitalize;">Pet Exercise</p>
+                                                                <div class="tick_icon">
+                                                                        <i class="fas fa-check"></i>
+                                                                </div>
+                                                        </div>
+                                                        <div class="single_service">
+                                                                <p style="text-transform: capitalize;">Pet Meals</p>
+                                                                <div class="tick_icon">
+                                                                        <i class="fas fa-check"></i>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <h1 style="margin: 10px 0; font-weight: bold; font-size: 50px;"><span style="font-size: 30px;">$</span>350</h1>
+                                                <a href="#" class="general_btn_blue" style="position: absolute; right: 40px; height: 46px; line-height: 150%;">Read More</a>
+                                        </div>
+                                </div>
+                                <div class="col-md-4 mb-5 px-2">
+                                        <div class="plan_card">
+                                                <h5 style="color: #e67e22; text-transform: capitalize; text-align: center; font-weight: bold;">Pet Care</h5>
+                                                <h2 style="font-weight:bold; margin: 10px 0; text-align: center;">30 Day</h2>
+                                                <div class="vahical_icon">
+                                                        <i class="fas fa-car-side"></i>
+                                                </div>
+                                                <div class="services_count">
+                                                        <div class="single_service">
+                                                                <p style="text-transform: capitalize;">Pet Room</p>
+                                                                <div class="tick_icon">
+                                                                        <i class="fas fa-check"></i>
+                                                                </div>
+                                                        </div>
+                                                        <div class="single_service">
+                                                                <p style="text-transform: capitalize;">Pet Grooming</p>
+                                                                <div class="tick_icon">
+                                                                        <i class="fas fa-check"></i>
+                                                                </div>
+                                                        </div>
+                                                        <div class="single_service">
+                                                                <p style="text-transform: capitalize;">Pet Exercise</p>
+                                                                <div class="tick_icon">
+                                                                        <i class="fas fa-check"></i>
+                                                                </div>
+                                                        </div>
+                                                        <div class="single_service">
+                                                                <p style="text-transform: capitalize;">Pet Meals</p>
+                                                                <div class="tick_icon">
+                                                                        <i class="fas fa-check"></i>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <h1 style="margin: 10px 0; font-weight: bold; font-size: 50px;"><span style="font-size: 30px;">$</span>650</h1>
+                                                <a href="#" class="general_btn_blue" style="position: absolute; right: 40px; height: 46px; line-height: 150%;">Read More</a>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div class="contactus_section" id="contact">
+                <div class="container-fluid" style="max-width: 1360px; margin: 150px auto;">
+                        <div class="row align-items-center">
+                                <div class="col-md-6 px-0">
+                                        <img src="images/contact_img.png" style="max-height: 400px; max-width: 100%;" alt="">
+                                </div>
+                                <div class="col-md-6 px-0">
+                                        <div class="contact_form">
+                                                <h3 style="font-weight: bold; margin-bottom: 20px;">Contact Us</h3>
+                                                <form action="" method="POST">
+                                                        <input type="text" placeholder="your name" />
+                                                        <input type="text" placeholder="your Email" />
+                                                        <input type="tel" placeholder="your Number" />
+                                                        <textarea name="comment" id="comment" placeholder="your message"></textarea>
+                                                        <button type="submit" class="fadeblue_general_btn" style="width: 80%;">Send Message</button>
+                                                </form>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <footer class="footer">
+                <img src="images/top_wave.png" width="100%" alt="">
+                <div class="text-center" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center;">
+                        <a href="#" class="general_btn_white" style="margin-right:10px; z-index: 100; height: 40px; line-height: 20px; margin-bottom: 10px;"><i class="fab fa-facebook" style="margin-right: 5px;"></i> Facebook</a>
+                        <a href="#" class="general_btn_white" style="margin-right:10px; z-index: 100; height: 40px; line-height: 20px; margin-bottom: 10px;"><i class="fab fa-twitter" style="margin-right: 5px;"></i> Twitter</a>
+                        <a href="#" class="general_btn_white" style="margin-right:10px; z-index: 100; height: 40px; line-height: 20px; margin-bottom: 10px;"><i class="fab fa-pinterest" style="margin-right: 5px;"></i> Pinterest</a>
+                        <a href="#" class="general_btn_white" style="margin-right:10px; z-index: 100; height: 40px; line-height: 20px; margin-bottom: 10px;"><i class="fab fa-instagram" style="margin-right: 5px;"></i> Instagram</a>
+                        <a href="#" class="general_btn_white" style="margin-right:10px; z-index: 100; height: 40px; line-height: 20px; margin-bottom: 10px;"><i class="fab fa-linkedin" style="margin-right: 5px;"></i> Linkedin</a>
+                </div>
+                <div class="cradit">
+                        Created By <span style="color:#e67e22;">Hamza khalid</span> | All Rights Reserved!
+                </div>
+        </footer>
+</body>
+<!-- Use jQuery CDN path -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+<!-- Use bootstrap 4 CDN path of popper.js and bootstrap.js instead of bundle.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+<!-- Use font-awesome js file -->
+<script src="js/font awesome/font awesome.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>

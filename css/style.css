@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+body{
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+    width: .6rem;
+}
+html::-webkit-scrollbar-thumb {
+    background: #e67e22;
+    border-radius: 5px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+p{
+    margin: 0px;
+    line-height:30px;
+}
+a{
+    text-decoration: none !important;
+}
+.active{
+    display: block !important;
+}
+.hero_section{
+    background: linear-gradient(rgba(0, 0, 0, 0.548) , rgba(0, 0, 0, 0.548)) , url('../images/home_bg_img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    min-height: 100vh;
+    position: relative;
+}
+.hero_section .content{
+    max-width: 500px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+}
+.hero_section .content h3{
+    color: white;
+    font-size: 4rem;
+    line-height: 90px;
+}
+.hero_section .content h3 span{
+    color: #e67e22;
+}
+.general_btn_white{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 35px;
+    color: white;
+    border-radius: 0 25px 25px 25px;
+    position: relative;
+    overflow: hidden;
+    line-height: 90px;
+    flex-wrap: wrap !important;
+}
+.general_btn_white:hover{
+    text-decoration: none;
+    color: #130f40;
+}
+.general_btn_white::before{
+    position: absolute;
+    border-radius: 0 25px 25px 25px;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    height: 0%;
+    width: 0%;
+    content: "";
+    transition: all linear 0.1s;
+}
+.general_btn_white:hover::before{
+    height: 100%;
+    width: 100%;
+}
+.general_btn_blue{
+    background-color: transparent;
+    border: 2px solid #130f40;
+    padding: 10px 35px;
+    color: #130f40;
+    border-radius: 0 25px 25px 25px;
+    position: relative;
+    overflow: hidden;
+    line-height: 90px;
+    z-index: 100;
+}
+.general_btn_blue:hover{
+    text-decoration: none;
+    color: white;
+}
+.general_btn_blue::before{
+    position: absolute;
+    border-radius: 0 25px 25px 25px;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    background-color: #130f40;
+    height: 0%;
+    width: 0%;
+    content: "";
+    transition: all linear 0.1s;
+}
+.general_btn_blue:hover::before{
+    height: 100%;
+    width: 100%;
+}
+.fadeblue_general_btn{
+    border: 2px solid #130f40;
+    color: #130f40;
+    border-radius: 0 25px 25px 25px;
+    background-color: transparent;
+    padding: 10px 35px;
+    width: 100%;
+}
+.fadeblue_general_btn:hover{
+    background-color: #130f40;
+    color: white;
+}
+.bottom_wave{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+}
+.header_bar{
+    background-color: white;
+    position: sticky !important;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    display: none;
+    -webkit-animation: fadeIn .4s linear;
+    animation: fadeInDown .2s linear;
+}
+.logo a{
+    color: #130f40;
+}
+.header{
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1111px;
+    margin: 0 auto;
+}
+.header_bar .header .menu_bar li{
+    display: inline-block;
+    margin: 0px 15px;
+}
+.header_bar .header .menu_bar li a{
+    color: #666;
+    display: block;
+}
+.header_bar .menu_bar li a:hover{
+    color: #e67e22;
+}
+.icons{
+    font-size: 25px;
+    display: flex;
+    align-items: space-evenly;
+    cursor: pointer !important;
+}
+.icons .cart_icon:hover , .icons .user_icons:hover , .icons .burger_icon:hover{
+    color: #e67e22;
+}
+.user_form{
+    position: absolute;
+    top: 120px;
+    right: 2%;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 350px;
+    width: 100%;
+    background-color: white;
+    display: none;
+    -webkit-animation: fadeIn .4s linear;
+    animation: fadeInUp .3s linear;
+}
+.user_form input[type="text"] , .user_form input[type="password"]{
+    margin-top: 20px;
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1px solid #666;
+    width: 100%;
+}
+.user_form .remember_me{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 20px 0;
+}
+.user_form .remember_me input{
+    margin-top: -10px;
+    margin-right: 10px;
+}
+.user_form .links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user_form .links a{
+    color: #e67e22;
+}
+.buy_dog_food{
+    transition: all linear 0.2s;
+}
+.buy_dog_food:hover{
+    transform: rotateZ(15deg);
+}
+.buy_cat_food{
+    transition: all linear 0.2s;
+}
+.buy_cat_food:hover{
+    transform: rotateZ(15deg);
+}
+.image_box{
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    max-height: 420px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.image_box .image_tools{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    right: -80px;
+    justify-content: space-between;
+    align-items: center;
+    transition: all linear 0.2s;
+}
+.image_box img{
+    width: 100%;
+    height: 100%;
+    transition: all linear 0.2s;
+}
+.image_box img:hover{
+    transform:scale(1.1);
+}
+.image_box:hover .image_tools{
+    top: 10px;
+    right: 10px;
+}
+.font_awesome_icon{
+    height: 60px;
+    width: 60px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: all linear 0.2s;
+}
+.font_awesome_icon:hover{
+    background-color: #e67e22;
+    color: white;
+}
+.service_box{
+    border-radius: 60% 60% 50% 50% / 50% 50% 70% 70%;
+    padding: 60px;
+    background-color: #eee;
+    text-align: center;
+    transition: all linear 0.2s;
+    max-height: 300px;
+}
+.service_box:hover{
+    border-radius: 0;
+}
+.service_box .pet_icon{
+    background-color: #e67e22;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    font-size: 35px;
+    padding: 5px;
+    color: white;
+    border-radius: 50%;
+}
+.plan_card{
+    padding: 20px;
+    background-color: #eee;
+    position: relative;
+}
+.vahical_icon{
+    color: #e67e22;
+    font-size: 50px;
+    margin: 20px 0;
+}
+.single_service{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.single_service .tick_icon{
+    color: #e67e22;
+}
+.contactus_section{
+    margin-top: 80px;
+}
+.contact_form{
+    max-width: 80%;
+    margin: 0 0 0 auto;
+}
+.contact_form input , textarea{
+    border: none;
+    border-bottom: 1px solid #666;
+    padding: 10px 0;
+    margin-bottom: 25px;
+    width: 80%;
+}
+textarea{
+    height: 100px;
+}
+.footer{
+    background-image: url('../images/footer_background.jpg');
+    background-size: cover;
+    width: 100%;
+    min-height: 100px;
+}
+.footer .cradit{
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+.icons #burger_icon{
+    display: none;
+}
+/*  media queries for website
+    and they should be written at the end of style.css otherwise error occur
+*/
+@media screen and (max-width : 800px){
+    .hero_section .content{
+        overflow: hidden;
+        width: auto;
+        padding: 4%;
+    }
+    .header_bar .header .menu_bar{
+        position: absolute;
+        display: block;
+        width: 100%;
+        left: 0px;
+        top: 80px;
+        right: 0;
+        background-color: white;
+        display: none;
+    }
+    .icons #burger_icon{
+        display: block;
+    }
+    .header_bar .header .menu_bar li{
+        display: block;
+    }
+    .header_bar .header .menu_bar li a{
+        padding: 10px;
+    }
+}
+@media screen and (max-width : 850px){
+    .header_bar .header .menu_bar li{
+        margin: 0px 10px;
+    }
+    .cat_food{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .contact_form{
+        margin: 40px auto;
+    }
+    .hero_section .content h3{
+        font-size: 2rem;
+        line-height: 45px;
+    }
+}
+@media screen and (max-width : 1100px){
+    .contact_form input , textarea ,  .contact_form .fadeblue_general_btn{
+        width: 100% !important;
+    }
+}
